@@ -1,0 +1,215 @@
+/* tab controls */
+  
+  .tab, .tab1 {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-right: -1px;
+}
+
+.tab.active, .tab1.active1 {
+    background-color: #fff;
+    border-top: 2px solid #007bff;
+}
+
+.tab-content, .tab-content1 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: none;
+}
+
+.tab-content.active, .tab-content1.active1 {
+    display: block;
+}
+
+
+.services {
+    background: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.serviceh1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceh1 h1 {
+    font-size: 3rem;
+    margin-left: 30px;
+    }
+
+.services__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.services__card1,.services__card2,.services__card3,.services__card32, .services__card4,.services__card42 {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* .services__card1 */
+.services__card1:nth-child(1) {
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/appliance/AC.jpg');
+}
+
+.services__card1:nth-child(2) {
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/appliance/washingmachine.jpg');
+}
+
+.services__card1:nth-child(3) {
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/appliance/fridge.jpg');
+}
+/* .services__card2 */
+.services__card2:nth-child(1) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/pestcontrol/commonroom.jpg');
+}
+
+.services__card2:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/pestcontrol/pest-control.jpg');
+}
+
+ .services__card2:nth-child(3) {
+                      background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/pestcontrol/sofa-clea.jpg');
+} 
+
+/* .services__card3 */
+.services__card3:nth-child(1) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/spamen/painrelief.jpg');
+}
+
+.services__card3:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/spamen/postworkout.jpg');
+}
+
+.services__card3:nth-child(3) {
+                      background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/spamen/stressrelief.jpg');
+}
+
+/* .services__card32 */
+.services__card32:nth-child(1) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/spawomen/face.jpg');
+}
+
+.services__card32:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/spawomen/womenfacial.jpg');
+}
+
+ .services__card32:nth-child(3) {
+                      background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/spawomen/womenpainrelief.jpg');
+} 
+
+/* .services__card4 */
+.services__card4:nth-child(1) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/salonmen/haircutmen.jpg');
+}
+
+.services__card4:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/salonmen/menfacial.jpg');
+}
+
+.services__card4:nth-child(3) {
+                      background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/salonmen/menhaircolor.jpg');
+}
+/* .services__card42 */
+.services__card42:nth-child(1) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/salonwomen/pedicure.jpg');
+}
+
+.services__card42:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/salonwomen/haircolor\ women.jpg');
+}
+
+.services__card42:nth-child(3) {
+                      background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%),
+                      url('images/salonwomen/hairwash\ women.jpg');
+}
+
+.services h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.services__card1 p, .services__card2 p, .services__card3 p,.services__card32 p,.services__card42 p, .services__card4 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.services__card1 .button, .services__card2 .button,.services__card3 .button, .services__card4 .button,.services__card32 .button, .services__card42 .button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #ff7062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none; 
+    width: auto;
+    height: auto;
+}
+
+.services__card1:hover, .services__card2:hover, .services__card3:hover, .services__card4:hover,.services__card32:hover,.services__card42:hover {
+    transform: scale(1.075);
+    transition: 0.25s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .services {
+        height: 1600px;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services {
+        height: 1400px;
+    }
+    .services h1 {
+        font-size: 1.2rem;
+    }
+
+    .services_card {
+        width: 300px;
+}
+}

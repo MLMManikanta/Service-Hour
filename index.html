@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Hour</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon"  href="./images/logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="./index.html" id="navbar__logo">
+                <img src="./images/logo.png" width="90px" height="90px" alt="">
+                SERVICE <br> HOUR 
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>   
+                <span class="bar"></span>   
+                <span class="bar"></span>   
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/services.html" class="navbar__links">Services</a>
+                </li>
+                <li class="navbar__btn" id="login-button-wrapper">
+                    <button id="login-button" class="button">Login</button>
+                </li>
+                <li class="navbar__item" id="welcome-message" style="display:none;">
+                    <a href="/" class="navbar__links"> <span id="user-name"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login Dialog -->
+    <dialog id="login-dialog" class="dialog-container">
+        <button id="close-dialog">&times;</button> <!-- Close button -->
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <div class="div_btn"><button type="submit" class="button dbtn">Login</button>
+            </div>
+        </form>
+    </dialog>
+
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Services at your doorstep</h1>
+                <h2>is just a click away</h2>
+                <p class="swm">See what makes us different.</p>
+                <a class="Mbtn" href="./booknow.html">Book Now</a>
+            </div>
+            <div class="main__img--container">
+                <img src="./images/services pic.PNG" alt="pic" id="main__img" />
+            </div>
+        </div>
+    </div>
+
+    <div class="services">
+        <h1>Our top most booked services</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <h2>Advance Bathroom Cleaning</h2>
+                <p>4.3* rating <br> at 499/-</p>
+                <button>Book now</button>
+            </div>
+            <div class="services__card">
+                <h2>Body Massage</h2>
+                <p>4.6* rating <br> at 999/-</p>
+                <button>Book now</button>
+            </div>
+            <div class="services__card">
+                <h2>Car wash</h2>
+                <p>4.5* rating <br> at 599/-</p>
+                <button>Book now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link-wrapper">
+                <div class="footer__links-items">
+                    <h2>About Us</h2>
+                    <a href="/">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investments</a>
+                    <a href="/">Terms of service</a>
+                </div>
+                <div class="footer__links-items">
+                    <h2>Contact Us</h2>
+                    <a href="/">Contact</a>
+                    <a href="/">Support</a>
+                    <a href="/">Destinations</a>
+                    <a href="/">Sponsorships</a>
+                </div>
+            </div>
+            <div class="footer__link-wrapper">
+                <div class="footer__links-items">
+                    <h2>Videos</h2>
+                    <a href="/">Submit Video</a>
+                    <a href="/">Ambassadors</a>
+                    <a href="/">Agency</a>
+                    <a href="/">Influencer</a>
+                </div>
+                <div class="footer__links-items">
+                    <h2>Social Media</h2>
+                    <a href="/">Instagram</a>
+                    <a href="/">Facebook</a>
+                    <a href="/">YouTube</a>
+                    <a href="/">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo"><i class="fas fa-gem"></i>Service <br>Hour</a>
+                </div>
+                <p class="website__rights">&copy; Service Hour 2024. All rights reserved</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+    <script>
+        // JavaScript for opening and closing the dialog
+        const loginButton = document.getElementById('login-button');
+        const loginDialog = document.getElementById('login-dialog');
+        const loginForm = document.getElementById('login-form');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const closeDialogButton = document.getElementById('close-dialog'); // New close button
+        const welcomeMessage = document.getElementById('welcome-message');
+        const userNameDisplay = document.getElementById('user-name');
+
+        // Open login dialog
+        loginButton.addEventListener('click', () => {
+            loginDialog.showModal();
+        });
+
+        // Close login dialog
+        closeDialogButton.addEventListener('click', () => {
+            loginDialog.close();
+        });
+
+        // Handle form submission
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent form submission
+            const username = usernameInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            // Check credentials
+            if (username === 'Havinash' && password === 'sh@123') {
+                alert('Login successful!');
+                loginButton.parentElement.style.display = 'none'; // Hide login button wrapper
+                userNameDisplay.innerText = username; // Display the username
+                welcomeMessage.style.display = 'block'; // Show the welcome message 
+                loginDialog.close(); // Close the dialog
+            } else {
+                alert('Invalid username or password. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
